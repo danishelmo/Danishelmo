@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Elman</title>
+    
+  <link href="https://fonts.googleapis.com/css2?family=Sztos:wght@900&display=swap" rel="stylesheet">
+  <link href="css elman/portfolio blue.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <header>
+       <h1>DANISH ELMAN&nbsp;</h1>
+       <nav>
+           <ul>
+               <li><a href="index.html">Animation</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="short film.html">Short Film</a></li>
+               <li><a href="insta.html">Insta</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+       </nav>
+   </header>
+
+   <section class="video-grid">
+       <div class="video-item" onclick="togglePlayPause(this)">
+           <video poster="images elman/Screenshot 2024-07-11 011137.png">
+               <source src="video 2/0711(2).mp4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+           <div class="play-button"></div>
+       </div>
+       <div class="video-item" onclick="togglePlayPause(this)">
+           <video poster="images elman/Screenshot 2024-07-11 011101.png">
+               <source src="video/cn logo.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+           <div class="play-button"></div>
+       </div>
+       <div class="video-item" onclick="togglePlayPause(this)">
+           <video poster="images elman/Screenshot 2024-07-11 011349.png">
+               <source src="video 2/caltex.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+           <div class="play-button"></div>
+       </div>
+       <div class="video-item" onclick="togglePlayPause(this)">
+           <video poster="images elman/Screenshot 2024-07-11 011326.png">
+               <source src="video/lenovo.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+           <div class="play-button"></div>
+       </div>
+       <div class="video-item" onclick="togglePlayPause(this)">
+           <video poster="images elman/Screenshot 2024-07-11 011249.png">
+               <source src="vid 3/merc logo.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+           <div class="play-button"></div>
+       </div>
+       <div class="video-item" onclick="togglePlayPause(this)">
+           <video poster="images elman/Screenshot 2024-07-11 011417.png">
+               <source src="vid 3/wb logo.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+           <div class="play-button"></div>
+       </div>
+   </section>
+
+   <footer>
+       <p>© 2024 Danish Elman. All rights reserved.</p>
+   </footer>
+
+   <script>
+       function togglePlayPause(videoItem) {
+           const video = videoItem.querySelector('video');
+           const playButton = videoItem.querySelector('.play-button');
+           if (video.paused) {
+               video.play();
+               playButton.style.display = 'none';
+           } else {
+               video.pause();
+               playButton.style.display = 'block';
+           }
+       }
+   </script>
+</body>
+</html>
+

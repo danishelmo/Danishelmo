@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Sztos:wght@900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ff69b4; /* Light pink background color */
+    color: #ff0; /* Yellow text color */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ff69b4; /* Pink background color */
+    padding: 20px 0;
+    text-align: center;
+    color: #ff0; /* Yellow text color */
+}
+
+header h1 {
+    font-family: 'Sztos', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0; /* Yellow text color */
+    font-family: 'Sztos', sans-serif; /* Ensure the font is consistent */
+   font-weight: bold;
+    font-size: 1.2em;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ff0; /* Yellow border */
+    background-color: #ff69b4; /* Match the background color */
+    color: #ff0; /* Yellow text color */
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ff0; /* Yellow border */
+    background-color: #ff69b4; /* Match the background color */
+    color: #ff0; /* Yellow text color */
+    cursor: pointer;
+}
+
+footer {
+    background-color: #ff69b4; /* Pink background color */
+    text-align: center;
+    padding: 10px 0;
+}

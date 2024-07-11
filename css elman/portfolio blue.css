@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Sztos:wght@900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ff69b4; /* Light pink background color */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ff69b4; /* Pink background color */
+    padding: 20px 0;
+    text-align: center;
+    color: #ff0; /* Yellow text color */
+}
+
+header h1 {
+    font-family: 'Sztos', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    margin: 0;
+    color: #ff0; /* Yellow text color */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0; /* Yellow text color */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+    grid-template-rows: 1fr 1fr; /* 2 rows */
+    gap: 10px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.video-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-item .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: url('images/play-button.png') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    display: block;
+    opacity: 0.8; /* Add some transparency to the play button */
+}
+
+.video-item:hover .play-button {
+    opacity: 1; /* Make play button fully visible on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Pink background color */
+    color: #ff0;
+}
+

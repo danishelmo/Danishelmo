@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Sztos:wght@900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ff69b4; /* Light pink background color */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ff69b4; /* Pink background color */
+    padding: 20px 0;
+    text-align: center;
+    color: #ff0; /* Yellow text color */
+}
+
+header h1 {
+    font-family: 'Sztos', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    margin: 0;
+    color: #ff0; /* Yellow text color */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0; /* Yellow text color */
+    font-family: 'Sztos', sans-serif; /* Ensure the font is consistent */
+  font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.video-top, .video-bottom {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.video-top video, .video-bottom video {
+    width: 80%;
+    max-width: 800px;
+    border: 5px solid #ff0; /* Yellow border */
+}
+
+footer {
+    background-color: #ff69b4; /* Pink background color */
+    text-align: center;
+    padding: 10px 0;
+    color: #ff0; /* Yellow text color */
+}

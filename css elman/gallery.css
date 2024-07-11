@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Sztos:wght@900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ff69b4; /* Light pink background color */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ff69b4; /* Pink background color */
+    padding: 20px 0;
+    text-align: center;
+    color: #ff0; /* Yellow text color */
+}
+
+header h1 {
+    font-family: 'Sztos', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    margin: 0;
+    color: #ff0; /* Yellow text color */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0; /* Yellow text color */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.topleft{height: 100px
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 rows */
+    gap: 10px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.image-item {
+    position: relative;
+    cursor: pointer;
+	padding-bottom: 2px
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Pink background color */
+    color: #ff0;
+}
+
+
+
